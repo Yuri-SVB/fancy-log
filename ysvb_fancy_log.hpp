@@ -8,6 +8,7 @@
 #if !defined(FANCY_COUT_HPP_)
 #include <string>
 #include "help.hpp"
+#include "ysvb_bug_proof.hpp"
 
 #define FANCY_COUT_HPP_
 
