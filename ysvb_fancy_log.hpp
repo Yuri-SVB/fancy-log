@@ -7,13 +7,20 @@
 
 #if !defined(FANCY_COUT_HPP_)
 #include <string>
-#include "help.hpp"
-#include "ysvb_bug_proof.hpp"
 
 #define FANCY_COUT_HPP_
 
 		//Macro for activate fancy log. Comment / uncomment for deactivate / deactivate it.
-// #define __FLOG__ 
+#define __FLOG__ 
+ 		//Macros for printing same as previous.
+#define __SHOW__
+#define __LOG__
+#define __PUT__
+#define __DBG__       
+// #define __TODO__
+#include "ysvb_bug_proof.hpp"
+
+
 #if defined(__FLOG__)
 		//basic macros
 		 	#define YSVB_FLOG_INDENT(L,X)		if(L){std::cout<<__FILE__<<" "<<__LINE__<<" "<<X; YSVB_FL_INDENTATION_COUNTER++;}
